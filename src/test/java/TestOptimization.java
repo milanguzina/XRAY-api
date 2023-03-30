@@ -72,6 +72,7 @@ public class TestOptimization {
 
     public void getTestSet () throws IOException {
         validateTest.getSession();
+        validateTest.AddTestsToTestSet("TestSetAPI");
         validateTest.getTestSet("TestSetAPI");
     }
 

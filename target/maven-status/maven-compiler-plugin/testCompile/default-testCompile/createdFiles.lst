@@ -3,5 +3,5 @@ resources\APIResources.class
 resources\TestDataBuild.class
 resources\Payload.class
 resources\Utils.class
-Test.class
+XRayAPITests.class
 XRAYFunctionalities.class

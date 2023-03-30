@@ -1,3 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="XRayAPITests" time="8.438" tests="11" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\PC\Desktop\Automation\AutomationProjectsPractice\XRAYAPIProject\target\test-classes;C:\Users\PC\Desktop\Automation\AutomationProjectsPractice\XRAYAPIProject\target\classes;C:\Users\PC\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\PC\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\PC\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\PC\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\PC\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\PC\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\PC\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\PC\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\3.0.0\maven-surefire-plugin-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.0.0\maven-surefire-common-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-api\3.0.0\surefire-api-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.0.0\surefire-logger-api-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.0.0\surefire-extensions-api-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-booter\3.0.0\surefire-booter-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.0.0\surefire-extensions-spi-3.0.0.jar;C:\Users\PC\.m2\repository\org\eclipse\aether\aether-util\1.0.0.v20140518\aether-util-1.0.0.v20140518.jar;C:\Users\PC\.m2\repository\org\eclipse\aether\aether-api\1.0.0.v20140518\aether-api-1.0.0.v20140518.jar;C:\Users\PC\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.1.1\maven-common-artifact-filters-3.1.1.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-artifact\3.1.0\maven-artifact-3.1.0.jar;C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.10\plexus-utils-3.0.10.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-core\3.1.0\maven-core-3.1.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-settings\3.1.0\maven-settings-3.1.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-settings-builder\3.1.0\maven-settings-builder-3.1.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-repository-metadata\3.1.0\maven-repository-metadata-3.1.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-model-builder\3.1.0\maven-model-builder-3.1.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-aether-provider\3.1.0\maven-aether-provider-3.1.0.jar;C:\Users\PC\.m2\repository\org\eclipse\aether\aether-spi\0.9.0.M2\aether-spi-0.9.0.M2.jar;C:\Users\PC\.m2\repository\org\eclipse\aether\aether-impl\0.9.0.M2\aether-impl-0.9.0.M2.jar;C:\Users\PC\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.0.0.M2a\org.eclipse.sisu.plexus-0.0.0.M2a.jar;C:\Users\PC\.m2\repository\javax\enterprise\cdi-api\1.0\cdi-api-1.0.jar;C:\Users\PC\.m2\repository\javax\annotation\jsr250-api\1.0\jsr250-api-1.0.jar;C:\Users\PC\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\PC\.m2\repository\com\google\guava\guava\10.0.1\guava-10.0.1.jar;C:\Users\PC\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\PC\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\PC\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.0.0.M2a\org.eclipse.sisu.inject-0.0.0.M2a.jar;C:\Users\PC\.m2\repository\asm\asm\3.3.1\asm-3.3.1.jar;C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.16\plexus-interpolation-1.16.jar;C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4.2\plexus-classworlds-2.4.2.jar;C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\PC\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\PC\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-plugin-api\3.1.0\maven-plugin-api-3.1.0.jar;C:\Users\PC\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-java\1.1.2\plexus-java-1.1.2.jar;C:\Users\PC\.m2\repository\org\ow2\asm\asm\9.4\asm-9.4.jar;C:\Users\PC\.m2\repository\com\thoughtworks\qdox\qdox\2.0.3\qdox-2.0.3.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.0.0\surefire-shared-utils-3.0.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Budapest"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\PC\AppData\Local\Temp\surefire3372572111365316833\surefirebooter-20230330112736455_3.jar C:\Users\PC\AppData\Local\Temp\surefire3372572111365316833 2023-03-30T11-27-36_264-jvmRun1 surefire-20230330112736455_1tmp surefire_0-20230330112736455_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\PC\Desktop\Automation\AutomationProjectsPractice\XRAYAPIProject\target\test-classes;C:\Users\PC\Desktop\Automation\AutomationProjectsPractice\XRAYAPIProject\target\classes;C:\Users\PC\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured\5.3.0\rest-assured-5.3.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy\4.0.6\groovy-4.0.6.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-xml\4.0.6\groovy-xml-4.0.6.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\PC\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\PC\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\PC\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\PC\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\PC\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\PC\.m2\repository\io\rest-assured\json-path\5.3.0\json-path-5.3.0.jar;C:\Users\PC\.m2\repository\org\apache\groovy\groovy-json\4.0.6\groovy-json-4.0.6.jar;C:\Users\PC\.m2\repository\io\rest-assured\rest-assured-common\5.3.0\rest-assured-common-5.3.0.jar;C:\Users\PC\.m2\repository\io\rest-assured\xml-path\5.3.0\xml-path-5.3.0.jar;C:\Users\PC\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.14.2\jackson-databind-2.14.2.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.14.2\jackson-core-2.14.2.jar;C:\Users\PC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.14.2\jackson-annotations-2.14.2.jar;C:\Users\PC\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\PC\.m2\repository\org\apache\maven\plugins\maven-surefire-plugin\3.0.0\maven-surefire-plugin-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\maven-surefire-common\3.0.0\maven-surefire-common-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-api\3.0.0\surefire-api-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-logger-api\3.0.0\surefire-logger-api-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-extensions-api\3.0.0\surefire-extensions-api-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-booter\3.0.0\surefire-booter-3.0.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-extensions-spi\3.0.0\surefire-extensions-spi-3.0.0.jar;C:\Users\PC\.m2\repository\org\eclipse\aether\aether-util\1.0.0.v20140518\aether-util-1.0.0.v20140518.jar;C:\Users\PC\.m2\repository\org\eclipse\aether\aether-api\1.0.0.v20140518\aether-api-1.0.0.v20140518.jar;C:\Users\PC\.m2\repository\org\apache\maven\shared\maven-common-artifact-filters\3.1.1\maven-common-artifact-filters-3.1.1.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-artifact\3.1.0\maven-artifact-3.1.0.jar;C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-utils\3.0.10\plexus-utils-3.0.10.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-core\3.1.0\maven-core-3.1.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-settings\3.1.0\maven-settings-3.1.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-settings-builder\3.1.0\maven-settings-builder-3.1.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-repository-metadata\3.1.0\maven-repository-metadata-3.1.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-model-builder\3.1.0\maven-model-builder-3.1.0.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-aether-provider\3.1.0\maven-aether-provider-3.1.0.jar;C:\Users\PC\.m2\repository\org\eclipse\aether\aether-spi\0.9.0.M2\aether-spi-0.9.0.M2.jar;C:\Users\PC\.m2\repository\org\eclipse\aether\aether-impl\0.9.0.M2\aether-impl-0.9.0.M2.jar;C:\Users\PC\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.plexus\0.0.0.M2a\org.eclipse.sisu.plexus-0.0.0.M2a.jar;C:\Users\PC\.m2\repository\javax\enterprise\cdi-api\1.0\cdi-api-1.0.jar;C:\Users\PC\.m2\repository\javax\annotation\jsr250-api\1.0\jsr250-api-1.0.jar;C:\Users\PC\.m2\repository\javax\inject\javax.inject\1\javax.inject-1.jar;C:\Users\PC\.m2\repository\com\google\guava\guava\10.0.1\guava-10.0.1.jar;C:\Users\PC\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\PC\.m2\repository\org\sonatype\sisu\sisu-guice\3.1.0\sisu-guice-3.1.0-no_aop.jar;C:\Users\PC\.m2\repository\aopalliance\aopalliance\1.0\aopalliance-1.0.jar;C:\Users\PC\.m2\repository\org\eclipse\sisu\org.eclipse.sisu.inject\0.0.0.M2a\org.eclipse.sisu.inject-0.0.0.M2a.jar;C:\Users\PC\.m2\repository\asm\asm\3.3.1\asm-3.3.1.jar;C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-interpolation\1.16\plexus-interpolation-1.16.jar;C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-classworlds\2.4.2\plexus-classworlds-2.4.2.jar;C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-component-annotations\1.5.5\plexus-component-annotations-1.5.5.jar;C:\Users\PC\.m2\repository\org\sonatype\plexus\plexus-sec-dispatcher\1.3\plexus-sec-dispatcher-1.3.jar;C:\Users\PC\.m2\repository\org\sonatype\plexus\plexus-cipher\1.4\plexus-cipher-1.4.jar;C:\Users\PC\.m2\repository\org\apache\maven\maven-plugin-api\3.1.0\maven-plugin-api-3.1.0.jar;C:\Users\PC\.m2\repository\commons-io\commons-io\2.6\commons-io-2.6.jar;C:\Users\PC\.m2\repository\org\codehaus\plexus\plexus-java\1.1.2\plexus-java-1.1.2.jar;C:\Users\PC\.m2\repository\org\ow2\asm\asm\9.4\asm-9.4.jar;C:\Users\PC\.m2\repository\com\thoughtworks\qdox\qdox\2.0.3\qdox-2.0.3.jar;C:\Users\PC\.m2\repository\org\apache\maven\surefire\surefire-shared-utils\3.0.0\surefire-shared-utils-3.0.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\PC"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\PC\Desktop\Automation\AutomationProjectsPractice\XRAYAPIProject"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\PC\AppData\Local\Temp\surefire3372572111365316833\surefirebooter-20230330112736455_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.6+9-LTS-190"/>
+    <property name="user.name" value="PC"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\PC\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\PC\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.6"/>
+    <property name="user.dir" value="C:\Users\PC\Desktop\Automation\AutomationProjectsPractice\XRAYAPIProject"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Docker\Docker\resources\bin;C:\Users\PC\Desktop\Automation\apache-maven-3.9.1\bin;C:\Users\PC\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Azure Data Studio\bin;C:\Users\PC\AppData\Local\gitkraken\bin;C:\Users\PC\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.6+9-LTS-190"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="addTestStep" classname="XRayAPITests" time="2.958">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "milanguzina",
+    "password": "micantheman123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 687x20059x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BSYU-JGXI-6CB2-CA1V_8283f29c9b4f4ac8875a73bd00120cfcfd076b4a_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=3B3043E44243615BFAAE8B664D33205E; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 30 Mar 2023 09:27:38 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "3B3043E44243615BFAAE8B664D33205E"
+    },
+    "loginInfo": {
+        "failedLoginCount": 40,
+        "loginCount": 387,
+        "lastFailedLoginTime": "2023-03-27T09:20:40.824+0200",
+        "previousLoginTime": "2023-03-30T11:25:41.800+0200"
+    }
+}
 Request method:	POST
 Request URI:	http://localhost:8080/rest/api/2/issue
 Proxy:			<none>
@@ -7,7 +115,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=3B3043E44243615BFAAE8B664D33205E
 Multiparts:		<none>
 Body:
 {
@@ -76,6 +184,8 @@ Connection: keep-alive
     "key": "XRAY-223",
     "self": "http://localhost:8080/rest/api/2/issue/10324"
 }
+Issue ID:10324
+Test Key:XRAY-223
 Request method:	POST
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/XRAY-223/steps
 Proxy:			<none>
@@ -85,7 +195,7 @@ Form params:	<none>
 Path params:	issueId=XRAY-223
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=3B3043E44243615BFAAE8B664D33205E
 Multiparts:		<none>
 Body:
 {
@@ -127,6 +237,7 @@ Connection: keep-alive
         
     ]
 }
+Step ID:650
 Request method:	GET
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/XRAY-223/steps/650
 Proxy:			<none>
@@ -137,7 +248,7 @@ Path params:	issueId=XRAY-223
 				stepId=650
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=3B3043E44243615BFAAE8B664D33205E
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
@@ -194,6 +305,7 @@ Connection: keep-alive
         "testCallStep": false
     }
 }
+Extracted Step ID:650
 Request method:	DELETE
 Request URI:	http://localhost:8080/rest/api/2/issue/10324
 Proxy:			<none>
@@ -204,7 +316,7 @@ Path params:	issueId=10324
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=3B3043E44243615BFAAE8B664D33205E
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 204 
@@ -234,7 +346,7 @@ Path params:	issueId=XRAY-223
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=3B3043E44243615BFAAE8B664D33205E
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
@@ -266,6 +378,59 @@ Connection: keep-alive
         
     }
 }
+Error message:Issue Does Not Exist
+]]></system-out>
+  </testcase>
+  <testcase name="negativeGetTestStep" classname="XRayAPITests" time="0.844">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "milanguzina",
+    "password": "micantheman123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 687x20065x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BSYU-JGXI-6CB2-CA1V_5af4476f9e2b37f8bc52f4f7e7e56262b2dfd013_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=67737FEF8D1B7C1F36385653BA7CADA3; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 30 Mar 2023 09:27:39 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "67737FEF8D1B7C1F36385653BA7CADA3"
+    },
+    "loginInfo": {
+        "failedLoginCount": 40,
+        "loginCount": 388,
+        "lastFailedLoginTime": "2023-03-27T09:20:40.824+0200",
+        "previousLoginTime": "2023-03-30T11:27:38.577+0200"
+    }
+}
 Request method:	POST
 Request URI:	http://localhost:8080/rest/api/2/issue
 Proxy:			<none>
@@ -275,7 +440,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=67737FEF8D1B7C1F36385653BA7CADA3
 Multiparts:		<none>
 Body:
 {
@@ -344,6 +509,8 @@ Connection: keep-alive
     "key": "XRAY-224",
     "self": "http://localhost:8080/rest/api/2/issue/10325"
 }
+Issue ID:10325
+Test Key:XRAY-224
 Request method:	POST
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/XRAY-224/steps
 Proxy:			<none>
@@ -353,7 +520,7 @@ Form params:	<none>
 Path params:	issueId=XRAY-224
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=67737FEF8D1B7C1F36385653BA7CADA3
 Multiparts:		<none>
 Body:
 {
@@ -395,6 +562,7 @@ Connection: keep-alive
         
     ]
 }
+Step ID:654
 Request method:	GET
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/XRAY-224/steps/654
 Proxy:			<none>
@@ -405,7 +573,7 @@ Path params:	issueId=XRAY-224
 				stepId=654
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=67737FEF8D1B7C1F36385653BA7CADA3
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
@@ -462,6 +630,7 @@ Connection: keep-alive
         "testCallStep": false
     }
 }
+Extracted Step ID:654
 Request method:	DELETE
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/XRAY-224/steps/654
 Proxy:			<none>
@@ -472,7 +641,7 @@ Path params:	issueId=XRAY-224
 				stepId=654
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=67737FEF8D1B7C1F36385653BA7CADA3
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 204 
@@ -503,7 +672,7 @@ Path params:	issueId=10325
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=67737FEF8D1B7C1F36385653BA7CADA3
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 400 
@@ -529,6 +698,7 @@ Connection: close
 {
     "error": "Test Step with id 654 not found or is not of type Test Step."
 }
+Error message:Test Step with id 654 not found or is not of type Test Step.
 Request method:	GET
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/10325/steps/654
 Proxy:			<none>
@@ -540,7 +710,7 @@ Path params:	issueId=10325
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=67737FEF8D1B7C1F36385653BA7CADA3
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 400 
@@ -566,6 +736,7 @@ Connection: close
 {
     "error": "Test Step with id 654 not found or is not of type Test Step."
 }
+Error message:Test Step with id 654 not found or is not of type Test Step.
 Request method:	DELETE
 Request URI:	http://localhost:8080/rest/api/2/issue/10325
 Proxy:			<none>
@@ -576,7 +747,7 @@ Path params:	issueId=10325
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=67737FEF8D1B7C1F36385653BA7CADA3
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 204 
@@ -606,7 +777,7 @@ Path params:	issueId=XRAY-224
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=67737FEF8D1B7C1F36385653BA7CADA3
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
@@ -638,6 +809,59 @@ Connection: keep-alive
         
     }
 }
+Error message:Issue Does Not Exist
+]]></system-out>
+  </testcase>
+  <testcase name="getTestSet" classname="XRayAPITests" time="0.488">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "milanguzina",
+    "password": "micantheman123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 687x20074x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BSYU-JGXI-6CB2-CA1V_34b5c072ce0a9ef3a2f6592d085b9eb1ff8808eb_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=F481DC2D9C508F327E29008FBC2E1731; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 30 Mar 2023 09:27:39 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "F481DC2D9C508F327E29008FBC2E1731"
+    },
+    "loginInfo": {
+        "failedLoginCount": 40,
+        "loginCount": 389,
+        "lastFailedLoginTime": "2023-03-27T09:20:40.824+0200",
+        "previousLoginTime": "2023-03-30T11:27:38.577+0200"
+    }
+}
 Request method:	POST
 Request URI:	http://localhost:8080/rest/raven/1.0/api/testset/XRAY-160/test
 Proxy:			<none>
@@ -647,7 +871,7 @@ Form params:	<none>
 Path params:	testSetKey=XRAY-160
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=F481DC2D9C508F327E29008FBC2E1731
 Multiparts:		<none>
 Body:
 {
@@ -689,7 +913,7 @@ Form params:	<none>
 Path params:	testSetKey=XRAY-160
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=F481DC2D9C508F327E29008FBC2E1731
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
@@ -953,6 +1177,7 @@ Connection: keep-alive
         }
     }
 ]
+[XRAY-29, XRAY-3]
 Request method:	GET
 Request URI:	http://localhost:8080/rest/raven/1.0/api/testset/XRAY-160/test
 Proxy:			<none>
@@ -962,7 +1187,7 @@ Form params:	<none>
 Path params:	testSetKey=XRAY-160
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=F481DC2D9C508F327E29008FBC2E1731
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
@@ -1226,6 +1451,59 @@ Connection: keep-alive
         }
     }
 ]
+[XRAY-29, XRAY-3]
+]]></system-out>
+  </testcase>
+  <testcase name="negativeGetTest" classname="XRayAPITests" time="0.573">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "milanguzina",
+    "password": "micantheman123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 687x20078x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BSYU-JGXI-6CB2-CA1V_397d2f676c81d7a6633a7884e0b42eccd210d622_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=E4C31CB5EEA407A97C9A7AD064ABF6FD; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 30 Mar 2023 09:27:41 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "E4C31CB5EEA407A97C9A7AD064ABF6FD"
+    },
+    "loginInfo": {
+        "failedLoginCount": 40,
+        "loginCount": 390,
+        "lastFailedLoginTime": "2023-03-27T09:20:40.824+0200",
+        "previousLoginTime": "2023-03-30T11:27:38.577+0200"
+    }
+}
 Request method:	POST
 Request URI:	http://localhost:8080/rest/api/2/issue
 Proxy:			<none>
@@ -1235,7 +1513,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=E4C31CB5EEA407A97C9A7AD064ABF6FD
 Multiparts:		<none>
 Body:
 {
@@ -1304,6 +1582,8 @@ Connection: keep-alive
     "key": "XRAY-225",
     "self": "http://localhost:8080/rest/api/2/issue/10326"
 }
+Issue ID:10326
+Test Key:XRAY-225
 Request method:	DELETE
 Request URI:	http://localhost:8080/rest/api/2/issue/10326
 Proxy:			<none>
@@ -1314,7 +1594,7 @@ Path params:	issueId=10326
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=E4C31CB5EEA407A97C9A7AD064ABF6FD
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 204 
@@ -1344,7 +1624,7 @@ Path params:	issueId=XRAY-225
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=E4C31CB5EEA407A97C9A7AD064ABF6FD
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
@@ -1376,6 +1656,7 @@ Connection: keep-alive
         
     }
 }
+Error message:Issue Does Not Exist
 Request method:	GET
 Request URI:	http://localhost:8080/rest/api/2/issue/XRAY-225
 Proxy:			<none>
@@ -1386,7 +1667,7 @@ Path params:	issueId=XRAY-225
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=E4C31CB5EEA407A97C9A7AD064ABF6FD
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
@@ -1418,6 +1699,59 @@ Connection: keep-alive
         
     }
 }
+Error message:Issue Does Not Exist
+]]></system-out>
+  </testcase>
+  <testcase name="getTest" classname="XRayAPITests" time="0.682">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "milanguzina",
+    "password": "micantheman123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 687x20083x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BSYU-JGXI-6CB2-CA1V_944ecc7f638caf9453898a9b1817163aabbeca0c_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=4989B57523C6B5978BD3753FDEBF5FD3; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 30 Mar 2023 09:27:41 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "4989B57523C6B5978BD3753FDEBF5FD3"
+    },
+    "loginInfo": {
+        "failedLoginCount": 40,
+        "loginCount": 391,
+        "lastFailedLoginTime": "2023-03-27T09:20:40.824+0200",
+        "previousLoginTime": "2023-03-30T11:27:41.796+0200"
+    }
+}
 Request method:	POST
 Request URI:	http://localhost:8080/rest/api/2/issue
 Proxy:			<none>
@@ -1427,7 +1761,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=4989B57523C6B5978BD3753FDEBF5FD3
 Multiparts:		<none>
 Body:
 {
@@ -1496,6 +1830,8 @@ Connection: keep-alive
     "key": "XRAY-226",
     "self": "http://localhost:8080/rest/api/2/issue/10327"
 }
+Issue ID:10327
+Test Key:XRAY-226
 Request method:	GET
 Request URI:	http://localhost:8080/rest/api/2/issue/10327
 Proxy:			<none>
@@ -1505,7 +1841,7 @@ Form params:	<none>
 Path params:	issueId=10327
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=4989B57523C6B5978BD3753FDEBF5FD3
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
@@ -1768,6 +2104,7 @@ Connection: keep-alive
         "archivedby": null
     }
 }
+Extracted Issue ID:10327
 Request method:	DELETE
 Request URI:	http://localhost:8080/rest/api/2/issue/10327
 Proxy:			<none>
@@ -1778,7 +2115,7 @@ Path params:	issueId=10327
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=4989B57523C6B5978BD3753FDEBF5FD3
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 204 
@@ -1808,7 +2145,7 @@ Path params:	issueId=XRAY-226
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=4989B57523C6B5978BD3753FDEBF5FD3
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
@@ -1840,6 +2177,59 @@ Connection: keep-alive
         
     }
 }
+Error message:Issue Does Not Exist
+]]></system-out>
+  </testcase>
+  <testcase name="deleteTestStep" classname="XRayAPITests" time="0.792">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "milanguzina",
+    "password": "micantheman123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 687x20088x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BSYU-JGXI-6CB2-CA1V_839eb842625477b0b22eb5c18ddf92f1ef4dec3b_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=4903506BF18C2A1E75135F7DD84F2143; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 30 Mar 2023 09:27:42 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "4903506BF18C2A1E75135F7DD84F2143"
+    },
+    "loginInfo": {
+        "failedLoginCount": 40,
+        "loginCount": 392,
+        "lastFailedLoginTime": "2023-03-27T09:20:40.824+0200",
+        "previousLoginTime": "2023-03-30T11:27:41.879+0200"
+    }
+}
 Request method:	POST
 Request URI:	http://localhost:8080/rest/api/2/issue
 Proxy:			<none>
@@ -1849,7 +2239,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=4903506BF18C2A1E75135F7DD84F2143
 Multiparts:		<none>
 Body:
 {
@@ -1918,6 +2308,8 @@ Connection: keep-alive
     "key": "XRAY-227",
     "self": "http://localhost:8080/rest/api/2/issue/10328"
 }
+Issue ID:10328
+Test Key:XRAY-227
 Request method:	POST
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/XRAY-227/steps
 Proxy:			<none>
@@ -1927,7 +2319,7 @@ Form params:	<none>
 Path params:	issueId=XRAY-227
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=4903506BF18C2A1E75135F7DD84F2143
 Multiparts:		<none>
 Body:
 {
@@ -1969,6 +2361,7 @@ Connection: keep-alive
         
     ]
 }
+Step ID:664
 Request method:	GET
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/XRAY-227/steps/664
 Proxy:			<none>
@@ -1979,7 +2372,7 @@ Path params:	issueId=XRAY-227
 				stepId=664
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=4903506BF18C2A1E75135F7DD84F2143
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
@@ -2036,6 +2429,7 @@ Connection: keep-alive
         "testCallStep": false
     }
 }
+Extracted Step ID:664
 Request method:	DELETE
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/XRAY-227/steps/664
 Proxy:			<none>
@@ -2046,7 +2440,7 @@ Path params:	issueId=XRAY-227
 				stepId=664
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=4903506BF18C2A1E75135F7DD84F2143
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 204 
@@ -2077,7 +2471,7 @@ Path params:	issueId=10328
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=4903506BF18C2A1E75135F7DD84F2143
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 400 
@@ -2103,6 +2497,7 @@ Connection: close
 {
     "error": "Test Step with id 664 not found or is not of type Test Step."
 }
+Error message:Test Step with id 664 not found or is not of type Test Step.
 Request method:	DELETE
 Request URI:	http://localhost:8080/rest/api/2/issue/10328
 Proxy:			<none>
@@ -2113,7 +2508,7 @@ Path params:	issueId=10328
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=4903506BF18C2A1E75135F7DD84F2143
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 204 
@@ -2143,7 +2538,7 @@ Path params:	issueId=XRAY-227
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=4903506BF18C2A1E75135F7DD84F2143
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
@@ -2175,6 +2570,59 @@ Connection: keep-alive
         
     }
 }
+Error message:Issue Does Not Exist
+]]></system-out>
+  </testcase>
+  <testcase name="removeTestFromTestSet" classname="XRayAPITests" time="0.167">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "milanguzina",
+    "password": "micantheman123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 687x20096x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BSYU-JGXI-6CB2-CA1V_673d11f58411b023a4a2b9a4b3d81200c7b0f495_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=45F7F6FA1AE14B809ED3A7419916434A; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 30 Mar 2023 09:27:43 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "45F7F6FA1AE14B809ED3A7419916434A"
+    },
+    "loginInfo": {
+        "failedLoginCount": 40,
+        "loginCount": 393,
+        "lastFailedLoginTime": "2023-03-27T09:20:40.824+0200",
+        "previousLoginTime": "2023-03-30T11:27:41.879+0200"
+    }
+}
 Request method:	POST
 Request URI:	http://localhost:8080/rest/raven/1.0/api/testset/XRAY-160/test
 Proxy:			<none>
@@ -2184,7 +2632,7 @@ Form params:	<none>
 Path params:	testSetKey=XRAY-160
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=45F7F6FA1AE14B809ED3A7419916434A
 Multiparts:		<none>
 Body:
 {
@@ -2226,7 +2674,7 @@ Form params:	<none>
 Path params:	testSetKey=XRAY-160
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=45F7F6FA1AE14B809ED3A7419916434A
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
@@ -2490,6 +2938,7 @@ Connection: keep-alive
         }
     }
 ]
+[XRAY-29, XRAY-3]
 Request method:	POST
 Request URI:	http://localhost:8080/rest/raven/1.0/api/testset/XRAY-160/test
 Proxy:			<none>
@@ -2499,7 +2948,7 @@ Form params:	<none>
 Path params:	testSetKey=XRAY-160
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=45F7F6FA1AE14B809ED3A7419916434A
 Multiparts:		<none>
 Body:
 {
@@ -2532,6 +2981,58 @@ Connection: keep-alive
 [
     
 ]
+]]></system-out>
+  </testcase>
+  <testcase name="AddTestsToTestSet" classname="XRayAPITests" time="0.11">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "milanguzina",
+    "password": "micantheman123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 687x20100x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BSYU-JGXI-6CB2-CA1V_5a3438a6acde81871362197ea5f2d8c20efa9ac1_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=C721D6B60D99436861A5CA17176F01C1; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 30 Mar 2023 09:27:43 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "C721D6B60D99436861A5CA17176F01C1"
+    },
+    "loginInfo": {
+        "failedLoginCount": 40,
+        "loginCount": 394,
+        "lastFailedLoginTime": "2023-03-27T09:20:40.824+0200",
+        "previousLoginTime": "2023-03-30T11:27:41.879+0200"
+    }
+}
 Request method:	POST
 Request URI:	http://localhost:8080/rest/raven/1.0/api/testset/XRAY-160/test
 Proxy:			<none>
@@ -2541,7 +3042,7 @@ Form params:	<none>
 Path params:	testSetKey=XRAY-160
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=C721D6B60D99436861A5CA17176F01C1
 Multiparts:		<none>
 Body:
 {
@@ -2583,7 +3084,7 @@ Form params:	<none>
 Path params:	testSetKey=XRAY-160
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=C721D6B60D99436861A5CA17176F01C1
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
@@ -2847,6 +3348,7 @@ Connection: keep-alive
         }
     }
 ]
+[XRAY-29, XRAY-3]
 Request method:	POST
 Request URI:	http://localhost:8080/rest/raven/1.0/api/testset/XRAY-160/test
 Proxy:			<none>
@@ -2856,7 +3358,7 @@ Form params:	<none>
 Path params:	testSetKey=XRAY-160
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=C721D6B60D99436861A5CA17176F01C1
 Multiparts:		<none>
 Body:
 {
@@ -2889,6 +3391,58 @@ Connection: keep-alive
 [
     
 ]
+]]></system-out>
+  </testcase>
+  <testcase name="createTest" classname="XRayAPITests" time="0.517">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "milanguzina",
+    "password": "micantheman123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 687x20104x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BSYU-JGXI-6CB2-CA1V_019648e8dd713a752c3b9b1bcd2e883789b931b5_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=84221F2332ABEF65C9D9E8453EE94320; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 30 Mar 2023 09:27:43 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "84221F2332ABEF65C9D9E8453EE94320"
+    },
+    "loginInfo": {
+        "failedLoginCount": 40,
+        "loginCount": 395,
+        "lastFailedLoginTime": "2023-03-27T09:20:40.824+0200",
+        "previousLoginTime": "2023-03-30T11:27:41.879+0200"
+    }
+}
 Request method:	POST
 Request URI:	http://localhost:8080/rest/api/2/issue
 Proxy:			<none>
@@ -2898,7 +3452,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=84221F2332ABEF65C9D9E8453EE94320
 Multiparts:		<none>
 Body:
 {
@@ -2967,6 +3521,8 @@ Connection: keep-alive
     "key": "XRAY-228",
     "self": "http://localhost:8080/rest/api/2/issue/10329"
 }
+Issue ID:10329
+Test Key:XRAY-228
 Request method:	DELETE
 Request URI:	http://localhost:8080/rest/api/2/issue/10329
 Proxy:			<none>
@@ -2977,7 +3533,7 @@ Path params:	issueId=10329
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=84221F2332ABEF65C9D9E8453EE94320
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 204 
@@ -3007,7 +3563,7 @@ Path params:	issueId=XRAY-228
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=84221F2332ABEF65C9D9E8453EE94320
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
@@ -3039,6 +3595,59 @@ Connection: keep-alive
         
     }
 }
+Error message:Issue Does Not Exist
+]]></system-out>
+  </testcase>
+  <testcase name="editTestStep" classname="XRayAPITests" time="0.712">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "milanguzina",
+    "password": "micantheman123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 687x20108x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BSYU-JGXI-6CB2-CA1V_07966794be15d07c3e843a1cf68c54de72715fab_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=1B2C586A3BEF5CFD5777F229B1EC9F4D; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 30 Mar 2023 09:27:43 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "1B2C586A3BEF5CFD5777F229B1EC9F4D"
+    },
+    "loginInfo": {
+        "failedLoginCount": 40,
+        "loginCount": 396,
+        "lastFailedLoginTime": "2023-03-27T09:20:40.824+0200",
+        "previousLoginTime": "2023-03-30T11:27:41.879+0200"
+    }
+}
 Request method:	POST
 Request URI:	http://localhost:8080/rest/api/2/issue
 Proxy:			<none>
@@ -3048,7 +3657,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=1B2C586A3BEF5CFD5777F229B1EC9F4D
 Multiparts:		<none>
 Body:
 {
@@ -3117,6 +3726,8 @@ Connection: keep-alive
     "key": "XRAY-229",
     "self": "http://localhost:8080/rest/api/2/issue/10330"
 }
+Issue ID:10330
+Test Key:XRAY-229
 Request method:	POST
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/XRAY-229/steps
 Proxy:			<none>
@@ -3126,7 +3737,7 @@ Form params:	<none>
 Path params:	issueId=XRAY-229
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=1B2C586A3BEF5CFD5777F229B1EC9F4D
 Multiparts:		<none>
 Body:
 {
@@ -3168,6 +3779,7 @@ Connection: keep-alive
         
     ]
 }
+Step ID:671
 Request method:	GET
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/XRAY-229/steps/671
 Proxy:			<none>
@@ -3178,7 +3790,7 @@ Path params:	issueId=XRAY-229
 				stepId=671
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=1B2C586A3BEF5CFD5777F229B1EC9F4D
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 
@@ -3235,6 +3847,7 @@ Connection: keep-alive
         "testCallStep": false
     }
 }
+Extracted Step ID:671
 Request method:	PUT
 Request URI:	http://localhost:8080/rest/raven/2.0/api/test/XRAY-229/steps/671
 Proxy:			<none>
@@ -3245,7 +3858,7 @@ Path params:	issueId=XRAY-229
 				stepId=671
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=1B2C586A3BEF5CFD5777F229B1EC9F4D
 Multiparts:		<none>
 Body:
 {
@@ -3287,6 +3900,7 @@ Connection: keep-alive
         
     ]
 }
+Edited Step ID:671
 Request method:	DELETE
 Request URI:	http://localhost:8080/rest/api/2/issue/10330
 Proxy:			<none>
@@ -3297,7 +3911,7 @@ Path params:	issueId=10330
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=1B2C586A3BEF5CFD5777F229B1EC9F4D
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 204 
@@ -3327,7 +3941,7 @@ Path params:	issueId=XRAY-229
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=1B2C586A3BEF5CFD5777F229B1EC9F4D
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
@@ -3359,6 +3973,59 @@ Connection: keep-alive
         
     }
 }
+Error message:Issue Does Not Exist
+]]></system-out>
+  </testcase>
+  <testcase name="deleteTest" classname="XRayAPITests" time="0.533">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/rest/auth/1/session
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "milanguzina",
+    "password": "micantheman123"
+}
+HTTP/1.1 200 
+X-AREQUESTID: 687x20115x1
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: sandbox
+Strict-Transport-Security: max-age=31536000
+Set-Cookie: atlassian.xsrf.token=BSYU-JGXI-6CB2-CA1V_1793e5a3edf4f93da5fb831da237cf2de6693d4b_lout; Path=/
+X-AUSERNAME: anonymous
+Set-Cookie: JSESSIONID=3E485186532C4EC577518A9CEFCFD5D9; Path=/; HttpOnly
+X-Seraph-LoginReason: OK
+Cache-Control: no-cache, no-store, no-transform
+Content-Encoding: gzip
+Vary: User-Agent
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Date: Thu, 30 Mar 2023 09:27:44 GMT
+Keep-Alive: timeout=20
+Connection: keep-alive
+
+{
+    "session": {
+        "name": "JSESSIONID",
+        "value": "3E485186532C4EC577518A9CEFCFD5D9"
+    },
+    "loginInfo": {
+        "failedLoginCount": 40,
+        "loginCount": 397,
+        "lastFailedLoginTime": "2023-03-27T09:20:40.824+0200",
+        "previousLoginTime": "2023-03-30T11:27:41.879+0200"
+    }
+}
 Request method:	POST
 Request URI:	http://localhost:8080/rest/api/2/issue
 Proxy:			<none>
@@ -3368,7 +4035,7 @@ Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=3E485186532C4EC577518A9CEFCFD5D9
 Multiparts:		<none>
 Body:
 {
@@ -3437,6 +4104,8 @@ Connection: keep-alive
     "key": "XRAY-230",
     "self": "http://localhost:8080/rest/api/2/issue/10331"
 }
+Issue ID:10331
+Test Key:XRAY-230
 Request method:	DELETE
 Request URI:	http://localhost:8080/rest/api/2/issue/10331
 Proxy:			<none>
@@ -3447,7 +4116,7 @@ Path params:	issueId=10331
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=3E485186532C4EC577518A9CEFCFD5D9
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 204 
@@ -3477,7 +4146,7 @@ Path params:	issueId=XRAY-230
 Headers:		X-Atlassian-Token=no-check
 				Accept=*/*
 				Content-Type=application/json
-Cookies:		<none>
+Cookies:		JSESSIONID=3E485186532C4EC577518A9CEFCFD5D9
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 404 
@@ -3509,3 +4178,7 @@ Connection: keep-alive
         
     }
 }
+Error message:Issue Does Not Exist
+]]></system-out>
+  </testcase>
+</testsuite>
